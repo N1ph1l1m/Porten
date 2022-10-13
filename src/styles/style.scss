@@ -1,9 +1,10 @@
 @font-face {
-  font-family:'PT Sans' ;
+  font-family: "PT Sans";
   src: url(/src/fonts/PT_Sans/PTSans-Regular.ttf);
-  font-weight: 400; 
+  font-weight: 400;
 }
-@import url('http://fonts.cdnfonts.com/css/post-no-bills-jaffna');
+
+@import url("http://fonts.cdnfonts.com/css/post-no-bills-jaffna");
 
 .header_contact {
   background-color: #000000;
@@ -15,35 +16,42 @@
     display: flex;
     justify-content: space-around;
   }
+
   .header_contact_item {
     color: #969696;
     font-size: 14px;
   }
+
   .header_contact_item_icon {
     width: 13.36px;
     height: 13.33px;
   }
+
   .header_contact_item_icon_input {
     display: inline-block;
     position: relative;
     margin-right: 10px;
   }
+
   .header_contact_item_icon_input_arrow {
     position: absolute;
     margin-top: 3px;
     margin-left: -3px;
   }
+
   .text_cont {
     display: inline-block;
     padding: 0 10px;
     border-right: 1px solid #969696;
     font-family: PT Sans;
-      font-weight: 400;
+    font-weight: 400;
+
     &:nth-child(4) {
       border-right: none;
     }
   }
 }
+
 .nav_wrap {
   background-color: #0f0f0f;
   display: flex;
@@ -57,9 +65,10 @@
     text-transform: uppercase;
     margin-top: 15px;
     margin-left: 70px;
-    font-family: 'Post No Bills Jaffna SemiBold', sans-serif;
+    font-family: "Post No Bills Jaffna SemiBold", sans-serif;
     font-weight: 700;
   }
+
   .nav_wrap_menu_item {
     text-transform: uppercase;
     display: inline-block;
@@ -68,22 +77,27 @@
     font-family: PT Sans;
     font-weight: 400;
     padding: 31px 20px;
+
     &:hover {
       background-color: #1f1f1f;
     }
+
     &:nth-child(4) {
       background-color: transparent;
     }
   }
+
   .icons_menu {
     position: relative;
     margin-left: 61px;
   }
+
   .icons_menu_resucle {
     width: 18.33px;
     height: 12.83px;
     margin: -2px;
   }
+
   .icons_menu_ball {
     position: absolute;
     margin-top: 12px;
@@ -91,11 +105,13 @@
     width: 2.75px;
     height: 2.75px;
   }
+
   .ball2 {
     margin-left: -12px;
     width: 2.75px;
     height: 2.75px;
   }
+
   .icons_menu_search {
     width: 16.5px;
     height: 16.5px;
@@ -103,46 +119,43 @@
   }
 }
 
-.main_page {
+.start_page {
   width: 100%;
   height: 810px;
-  background: url(/src/img/mainBack.png)50% no-repeat;
+  background: url(/src/img/mainBack.png) 50% no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 
-  .main_page_block {
+  .start_page_block {
     width: 320px;
     height: 320px;
     border: 4px solid rgb(255, 255, 255);
-   
-    .main_block_title {
 
+    .start_block_title {
       width: 238px;
       display: inline-block;
       margin-top: 94px;
       margin-left: 40px;
       margin-bottom: 3px;
-     
       text-transform: uppercase;
       color: #ffffff;
-      font-family: 'Post No Bills Jaffna SemiBold', sans-serif;
+      font-family: "Post No Bills Jaffna SemiBold", sans-serif;
       font-weight: 700;
       font-size: 64px;
       font-style: normal;
       text-align: center;
-    
     }
-    .main_block_title_line
-    {
-      border: 1px solid white ;
+
+    .start_block_title_line {
+      border: 1px solid white;
       width: 183px;
       margin: 0 auto;
       margin-bottom: 7px;
-      
     }
-    .main_block_text {
+
+    .start_block_text {
       text-align: center;
       font-size: 22px;
       text-transform: uppercase;
@@ -152,7 +165,8 @@
       line-height: 28px;
     }
   }
-  .main_page_text {
+
+  .start_page_text {
     position: absolute;
     max-width: 730px;
     height: 96px;
@@ -166,162 +180,194 @@
   }
 }
 
-.page_info_wrap {
+.main_page {
   display: flex;
   flex-wrap: wrap;
- 
+
   .about_item_season2020 {
     width: 1040px;
     height: 730px;
     background-color: #000000;
   }
-  .page_info_block_title {
-    margin: 93px;
+
+  .block_title {
+    margin-top: 93px;
+    margin-left: auto;
+
     .title_h1 {
       text-align: center;
       font-size: 36px;
       text-transform: uppercase;
       color: #ffffff;
     }
+
     .title_line {
       width: 120px;
       margin: 50px auto;
       border: 1px solid #ffffff;
     }
-    
   }
-  .season_block_wrap {
+
+  .products_block_wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 
-    .season_block_item {
+    .products_block_item {
       width: 260px;
       height: 325px;
       background-color: #191b1c;
     }
+
     .item_img {
       margin: 55px 22px 26px 23px;
     }
+
     .watch_block_text {
       margin-top: 70px;
+
       .watch_block_name {
         font-size: 18px;
         color: #ffffff;
         margin-bottom: 10px;
       }
+
       .watch_block_price {
         font-size: 16px;
         color: #ffffff;
       }
     }
   }
+
   .about_item_newCollection {
-    position: relative;
     width: 880px;
     height: 730px;
     background: url(/src/img/bg_newCollection.png);
-    .newCollection_wrap_content {
-      position: relative;
-      margin: 484px 252px 100px 252px;
-      width: 376px;
-      height: 146px;
 
-      .newCollection_title {
-        position: absolute;
-        text-transform: uppercase;
-        font-size: 36px;
-        color: #ffffff;
-        text-align: center;
-        margin: 10px 0px 30px 6px;
+    .block_title {
+      margin: 483px auto;
+
+      .title_line {
+        margin-top: 30px;
+        margin-bottom: 0px;
       }
-      .newCollection_title_line {
-        position: absolute;
-        margin: 69px 127px 77px 129px;
-        width: 120px;
-        border: 1px solid #ffffff;
+
+      .button_wrap_newCollect {
+        display: flex;
+        justify-content: center;
+
+        .page_info_button {
+          margin-top: 30px;
+          text-align: center;
+          background: transparent;
+          font-size: 18px;
+          text-transform: uppercase;
+          border: 1px solid #ffffff;
+          padding: 12px 28px;
+          color: #ffffff;
+        }
       }
-      .newCollection_bottom_catalog {
-        position: absolute;
-        margin: 97px 120px;
-        text-align: center;
-        background: transparent;
-        font-size: 18px;
-        text-transform: uppercase;
-        border: 1px solid #ffffff;
-        padding: 12px 28px;
-        color: #ffffff;
-      }
+
     }
   }
+
   .about_item_img {
     width: 880px;
     height: 600px;
     background-image: url(/src/img/bg_item_img.png);
   }
+
   .about_item_collect2018 {
     width: 1040px;
     height: 600px;
     background-color: #000000;
-    position: relative;
-    .collect2018_title {
-      position: absolute;
-      top: 100px;
-      left: 332px;
-      right: 332px;
 
-      text-transform: uppercase;
-      color: white;
-      font-size: 36px;
-      text-align: center;
-      .collect2018_title_line {
-        position: absolute;
-        margin: 40px 127px 77px 129px;
-        width: 120px;
-        border: 1px solid #ffffff;
-      }
+    .block_title {
+      margin-top: 100px;
     }
+
     .collect2018_text {
-      position: absolute;
+      margin: 0px auto;
       width: 471px;
       height: 173px;
-      top: 219px;
-      right: 284px;
-      left: 285px;
       font-size: 14px;
       text-align: center;
       color: white;
+      line-height: 21px;
+    }
+
+    .button_wrap {
+      display: flex;
+      justify-content: center;
+
+      .collect2018_button {
+        margin-top: 65px;
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        border: 1px solid #ffffff;
+        padding: 12px 28px;
+        color: #ffffff;
+        background-color: transparent;
+      }
     }
   }
-  .collect2018_button {
-    position: absolute;
-    top: 453px;
-    left: 365px;
-    right: 364px;
-    text-align: center;
-    font-size: 18px;
-    text-transform: uppercase;
-    border: 1px solid #ffffff;
-    padding: 12px 28px;
-    color: #ffffff;
-    background-color: transparent;
-  }
-  .newPosttup {
-    position: relative;
-    width: 1920px;
+
+  .new_progress {
+    width: 100%;
     height: 1289px;
     background-color: #000000;
-    .season_block_wrap {
-      position: absolute;
-      width: 1132px;
-      height: 962px;
-      top: 289px;
-      left: 405px;
+
+    .new_progress_wrap {
+      display: flex;
+      justify-content: center;
     }
-    .season_title_line {
-      left: 900px;
-      top: 208px;
-      margin: 0 0 0 0;
+
+    .products_block_wrap {
+      width: 1132px;
+      height: 962px
     }
   }
+
+  .our_brands {
+    width: 100%;
+    height: 362px;
+    background-color: #0F0F0F;
+
+    .block_title {
+      margin-top: 60px;
+    }
+
+    .title_line {
+      margin-top: 40px;
+    }
+
+    .brands_img_wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .brands_img_item {
+      width: 255;
+      height: 94px;
+      margin-right: 30px;
+    }
+  }
+}
+.about_us
+{
+width: 100%;
+height: 400px;
+background:url(/src/img/about_us.png) 50% no-repeat;
+}
+.footer_text
+{
+width: 100%;
+height: 50px;
+color: white;
+background-color: #0F0F0F;
+text-align: center;
+padding-top: 17px;
+font-size: 12px;
 }
