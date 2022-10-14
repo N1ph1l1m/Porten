@@ -15,6 +15,7 @@
   font-weight: 400;
 }
 
+
 .header_contact {
   background-color: #000000;
   width: 100%;
@@ -130,7 +131,7 @@
 
 .start_page {
   width: 100%;
-  height: 810px;
+  min-height: 810px;
   background: url(/src/img/mainBack.png) 50% no-repeat;
   display: flex;
   justify-content: center;
@@ -192,11 +193,14 @@
 .main_page {
   display: flex;
   flex-wrap: wrap;
-
+  
   .about_item_season2020 {
-    width: 1040px;
+    width: 50%;
     height: 730px;
     background-color: #000000;
+    @media (max-width:1200px){
+      width:100%;
+    }
   }
 
   .block_title {
@@ -222,19 +226,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    position: relative;
 
     .products_block_item {
-      width: 260px;
+      width: 30%;
       height: 325px;
       background-color: #191b1c;
+       .item_img {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
     }
 
-    .item_img {
-      margin: 55px 22px 26px 23px;
     }
-
     .watch_block_text {
-      margin-top: 70px;
+      position:absolute;
+      margin-top: 80px;
 
       .watch_block_name {
         font-size: 18px;
@@ -256,10 +263,15 @@
   }
 
   .about_item_newCollection {
-    width: 880px;
+    width: 50%;
     height: 730px;
     background: url(/src/img/bg_newCollection.png);
-
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width:1200px){
+      width:100%;
+    }
     .block_title {
       margin: 483px auto;
 
@@ -289,15 +301,24 @@
   }
 
   .about_item_img {
-    width: 880px;
+    width: 40%;
     height: 600px;
-    background-image: url(/src/img/bg_item_img.png);
+    background-image: url(/src/img/bg_item_img.png) ;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width:1200px){
+      width:100%;
+    }
   }
 
   .about_item_collect2018 {
-    width: 1040px;
+    width: 60%;
     height: 600px;
     background-color: #000000;
+    @media (max-width:1200px){
+      width:100%;
+    }
 
     .block_title {
       margin-top: 100px;
@@ -334,7 +355,7 @@
 
   .new_progress {
     width: 100%;
-    height: 1289px;
+    min-height: auto;
     background-color: #000000;
 
     .new_progress_wrap {
@@ -343,14 +364,19 @@
     }
 
     .products_block_wrap {
-      width: 1132px;
+      width: 80%;
       height: 962px
+     
+    }
+    .products_block_item
+    {
+      width: 24%;
+   
     }
   }
 
   .our_brands {
     width: 100%;
-    height: 362px;
     background-color: #0F0F0F;
 
     .block_title {
@@ -371,40 +397,40 @@
       width: 255;
       height: 94px;
       margin-right: 30px;
+      margin-bottom: 80px;
     }
   }
 }
 .about_us
 {
 width: 100%;
-min-height: 400px;
+height: 400px;
 background:url(/src/img/about_us.png) 50% no-repeat;
 .footer_wrap
 {
-
+width: 100%;
 flex-wrap: wrap;
-height: 220px;
+min-height: 220px;
 display: flex;
 align-items: center;
 justify-content: center;
 padding-top: 80px;
-flex-wrap: wrap;
 }
 .footer_item_shop
 {
-width: 350px;
+width: 30%;
 height: 219px;
 margin-right: 31px;
 }
 .footer_item_categories
 {
-  width: 270px;
+  width: 15%;
   height: 190px;
   margin-right: 80px;
 }
 .footer_item_mailingList
 {
-width: 350px;
+width: 30%;
 height: 200px;
 }
 
@@ -464,10 +490,12 @@ height: 200px;
 }
 }
 
+
+
 .footer_text
 {
 width: 100%;
-height: 50px;
+min-height: 50px;
 color: white;
 background-color: #0F0F0F;
 text-align: center;
