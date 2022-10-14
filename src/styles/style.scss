@@ -3,6 +3,7 @@
   src: url(/src/fonts/PT_Sans/PTSans-Regular.ttf);
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Post No Bills Jaffna SemiBold";
   src: url(/src/fonts/PostNoBillsJaffna-SemiBold.ttf);
@@ -193,14 +194,12 @@
 .main_page {
   display: flex;
   flex-wrap: wrap;
-  
+
   .about_item_season2020 {
     width: 50%;
     height: 730px;
     background-color: #000000;
-    @media (max-width:1200px){
-      width:100%;
-    }
+
   }
 
   .block_title {
@@ -232,15 +231,17 @@
       width: 30%;
       height: 325px;
       background-color: #191b1c;
-       .item_img {
+
+      .item_img {
         display: flex;
         justify-content: center;
         margin-top: 50px;
-    }
+      }
 
     }
+
     .watch_block_text {
-      position:absolute;
+      position: absolute;
       margin-top: 80px;
 
       .watch_block_name {
@@ -255,9 +256,10 @@
         color: #ffffff;
         line-height: 19px;
       }
-      .watch_block_name ,  .watch_block_price
-      {
-        font-family:"Playfair Display";
+
+      .watch_block_name,
+      .watch_block_price {
+        font-family: "Playfair Display";
       }
     }
   }
@@ -269,9 +271,7 @@
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
-    @media (max-width:1200px){
-      width:100%;
-    }
+
     .block_title {
       margin: 483px auto;
 
@@ -303,22 +303,18 @@
   .about_item_img {
     width: 40%;
     height: 600px;
-    background-image: url(/src/img/bg_item_img.png) ;
+    background-image: url(/src/img/bg_item_img.png);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
-    @media (max-width:1200px){
-      width:100%;
-    }
+
+
   }
 
   .about_item_collect2018 {
     width: 60%;
     height: 600px;
     background-color: #000000;
-    @media (max-width:1200px){
-      width:100%;
-    }
 
     .block_title {
       margin-top: 100px;
@@ -355,7 +351,7 @@
 
   .new_progress {
     width: 100%;
-    min-height: auto;
+    min-height: 1289px;
     background-color: #000000;
 
     .new_progress_wrap {
@@ -366,17 +362,28 @@
     .products_block_wrap {
       width: 80%;
       height: 962px
-     
     }
-    .products_block_item
-    {
+
+
+    .products_block_item {
       width: 24%;
-   
+
+    }
+
+    @media screen and (max-width:860px) {
+      height: 1900px;
+
+      .products_block_item {
+        width: 45%;
+        margin-bottom: 80px;
+      }
+
     }
   }
 
   .our_brands {
     width: 100%;
+    min-height: 362px;
     background-color: #0F0F0F;
 
     .block_title {
@@ -401,104 +408,212 @@
     }
   }
 }
-.about_us
-{
-width: 100%;
-height: 400px;
-background:url(/src/img/about_us.png) 50% no-repeat;
-.footer_wrap
-{
-width: 100%;
-flex-wrap: wrap;
-min-height: 220px;
-display: flex;
-align-items: center;
-justify-content: center;
-padding-top: 80px;
-}
-.footer_item_shop
-{
-width: 30%;
-height: 219px;
-margin-right: 31px;
-}
-.footer_item_categories
-{
-  width: 15%;
-  height: 190px;
-  margin-right: 80px;
-}
-.footer_item_mailingList
-{
-width: 30%;
-height: 200px;
-}
 
-.footer_item_title {
-  font-family: "Playfair Display";
-  line-height: 28px;
-  font-size: 24px;
-  color: #FFFFFF;
-  margin-bottom: 40px;
-}
-.footer_item_text
-{
-  font-family: "PT Sans";
-  font-size: 14px;
-  line-height: 21px;
-  color: #FFFFFF;
-}
-.button_wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  
 
-  .button_item
-  {
-    font-size: 14px;
-    padding: 10px 20px;
-    background-color: #000000;
-    color: #FFFFFF;
-    margin-bottom: 15px;
-    text-transform: lowercase;
-    font-family: "PT Sans";
-  }
-}
-.input_wrap
-{
-  margin-top: 37px;
-  display: flex;
-  flex-wrap: wrap;
-  .input_item_email 
-  {
-    width: 210px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.4);
-    font-size: 20px;
-  }
-  .input_item_submit 
-  {
-    padding: 10px 20px;
-    font-family: "PT Sans";
-    background: #000000;
-    color: #FFFFFF;
-    line-height: 21px;
-    font-size: 14px;
-    text-transform: uppercase;
+.about_us {
+  width: 100%;
+  min-height: 400px;
+  background: url(/src/img/about_us.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  .footer_wrap {
+    width: 100%;
+    flex-wrap: wrap;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+
+    .footer_item_shop {
+      width: 30%;
+      height: 219px;
+      margin-right: 31px;
     }
+
+    .footer_item_categories {
+      width: 15%;
+      height: 190px;
+      margin-right: 80px;
+
+    }
+
+    .footer_item_mailingList {
+      width: 30%;
+      height: 200px;
+
+    }
+
+    .footer_item_title {
+      font-family: "Playfair Display";
+      line-height: 28px;
+      font-size: 24px;
+      color: #FFFFFF;
+      margin-bottom: 40px;
+    }
+
+    .footer_item_text {
+      font-family: "PT Sans";
+      font-size: 14px;
+      line-height: 21px;
+      color: #FFFFFF;
+    }
+
+    .button_wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+
+      .button_item {
+        font-size: 14px;
+        padding: 10px 20px;
+        background-color: #000000;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+        text-transform: lowercase;
+        font-family: "PT Sans";
+      }
+    }
+
+    .input_wrap {
+      margin-top: 37px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .input_item_email {
+        width: 210px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.4);
+        font-size: 20px;
+      }
+
+      .input_item_submit {
+        padding: 10px 20px;
+        font-family: "PT Sans";
+        background: #000000;
+        color: #FFFFFF;
+        line-height: 21px;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      @media (max-width:363px) {
+        .input_item_email {
+          width: 50%;
+        }
+
+        .input_item_submit {
+          width: 25%;
+        }
+      }
+    }
+
+    @media (max-width:1200px) {
+      height: 550px;
+      align-items: flex-start;
+      padding-top: 5px;
+
+      .footer_item_shop,
+      .footer_item_categories,
+      .footer_item_mailingList {
+        width: 50%;
+        height: auto;
+        margin-right: 0px;
+
+      }
+
+      .footer_item_categories {
+        margin-right: 10px;
+      }
+    }
+
+    @media (max-width:992px) {
+      height: 590px;
+      align-items: flex-start;
+      padding-top: 5px;
+
+      .footer_item_shop,
+      .footer_item_categories,
+      .footer_item_mailingList {
+        width: 70%;
+        height: auto;
+        margin-right: 0px;
+      }
+
+      .footer_item_categories {
+        margin-right: 10px;
+      }
+    }
+
+    @media (max-width:768px) {
+
+      height: 610px;
+      align-items: flex-start;
+      padding-top: 5px;
+
+      .footer_item_shop,
+      .footer_item_categories,
+      .footer_item_mailingList {
+        width: 80%;
+        height: auto;
+        margin-right: 0px;
+      }
+
+      .footer_item_categories {
+        margin-right: 10px;
+      }
+    }
+
+    @media (max-width:480px) {
+      height: 650px;
+      align-items: flex-start;
+      padding-top: 5px;
+
+      .footer_item_shop,
+      .footer_item_categories,
+      .footer_item_mailingList {
+        width: 90%;
+        height: auto;
+        margin-right: 0px;
+      }
+
+      .footer_item_categories {
+        margin-right: 10px;
+      }
+    }
+  }
 }
+
+.footer_text {
+  width: 100%;
+  min-height: 50px;
+  color: white;
+  background-color: #0F0F0F;
+  text-align: center;
+  padding-top: 17px;
+  font-size: 12px;
 }
 
 
+.container {
+  @media (max-width:1200px) {
 
-.footer_text
-{
-width: 100%;
-min-height: 50px;
-color: white;
-background-color: #0F0F0F;
-text-align: center;
-padding-top: 17px;
-font-size: 12px;
+    .about_item_season2020,
+    .about_item_newCollection,
+    .about_item_img,
+    .about_item_collect2018 {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width:992px) {}
+
+  @media screen and (max-width:768px) {}
+
+  @media screen and (max-width:480px) {}
+
+  @media screen and (max-width:320px) {}
 }
