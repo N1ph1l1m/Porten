@@ -3,8 +3,17 @@
   src: url(/src/fonts/PT_Sans/PTSans-Regular.ttf);
   font-weight: 400;
 }
+@font-face {
+  font-family: "Post No Bills Jaffna SemiBold";
+  src: url(/src/fonts/PostNoBillsJaffna-SemiBold.ttf);
+  font-weight: 700;
+}
 
-@import url("http://fonts.cdnfonts.com/css/post-no-bills-jaffna");
+@font-face {
+  font-family: "Playfair Display";
+  src: url(/src/fonts/PlayfairDisplay-Regular.ttf);
+  font-weight: 400;
+}
 
 .header_contact {
   background-color: #000000;
@@ -63,7 +72,7 @@
     color: #ffffff;
     font-size: 36px;
     text-transform: uppercase;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: 70px;
     font-family: "Post No Bills Jaffna SemiBold", sans-serif;
     font-weight: 700;
@@ -198,6 +207,7 @@
       text-align: center;
       font-size: 36px;
       text-transform: uppercase;
+      font-family: "Playfair Display";
       color: #ffffff;
     }
 
@@ -230,11 +240,17 @@
         font-size: 18px;
         color: #ffffff;
         margin-bottom: 10px;
+        line-height: 21px;
       }
 
       .watch_block_price {
         font-size: 16px;
         color: #ffffff;
+        line-height: 19px;
+      }
+      .watch_block_name ,  .watch_block_price
+      {
+        font-family:"Playfair Display";
       }
     }
   }
@@ -265,6 +281,7 @@
           border: 1px solid #ffffff;
           padding: 12px 28px;
           color: #ffffff;
+          font-family: "PT Sans";
         }
       }
 
@@ -293,6 +310,7 @@
       font-size: 14px;
       text-align: center;
       color: white;
+      font-family: "Playfair Display";
       line-height: 21px;
     }
 
@@ -309,6 +327,7 @@
         padding: 12px 28px;
         color: #ffffff;
         background-color: transparent;
+        font-family: "PT Sans";
       }
     }
   }
@@ -358,9 +377,93 @@
 .about_us
 {
 width: 100%;
-height: 400px;
+min-height: 400px;
 background:url(/src/img/about_us.png) 50% no-repeat;
+.footer_wrap
+{
+
+flex-wrap: wrap;
+height: 220px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 80px;
+flex-wrap: wrap;
 }
+.footer_item_shop
+{
+width: 350px;
+height: 219px;
+margin-right: 31px;
+}
+.footer_item_categories
+{
+  width: 270px;
+  height: 190px;
+  margin-right: 80px;
+}
+.footer_item_mailingList
+{
+width: 350px;
+height: 200px;
+}
+
+.footer_item_title {
+  font-family: "Playfair Display";
+  line-height: 28px;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+.footer_item_text
+{
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.button_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+
+  .button_item
+  {
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    text-transform: lowercase;
+    font-family: "PT Sans";
+  }
+}
+.input_wrap
+{
+  margin-top: 37px;
+  display: flex;
+  flex-wrap: wrap;
+  .input_item_email 
+  {
+    width: 210px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.4);
+    font-size: 20px;
+  }
+  .input_item_submit 
+  {
+    padding: 10px 20px;
+    font-family: "PT Sans";
+    background: #000000;
+    color: #FFFFFF;
+    line-height: 21px;
+    font-size: 14px;
+    text-transform: uppercase;
+    }
+}
+}
+
 .footer_text
 {
 width: 100%;
