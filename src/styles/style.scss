@@ -16,7 +16,6 @@
   font-weight: 400;
 }
 
-
 .header_contact {
   background-color: #000000;
   width: 100%;
@@ -103,30 +102,40 @@
     margin-left: 61px;
   }
 
-  .icons_menu_resucle {
-    width: 18.33px;
-    height: 12.83px;
-    margin: -2px;
+  .resucle_wrap {
+    width: 20px;
+    height: 13px;
+    display: inline-block;
+    position: relative;
+
+    .icons_menu_resucle {
+      width: 18.33px;
+      height: 12.83px;
+      margin: -2px;
+    }
+
+    .icons_menu_ball {
+      position: absolute;
+      top: 11px;
+      left: 4px;
+      width: 2.75px;
+      height: 2.75px;
+    }
+
+    .ball2 {
+      position: absolute;
+      left: 11px;
+      width: 2.75px;
+      height: 2.75px;
+    }
   }
 
-  .icons_menu_ball {
-    position: absolute;
-    margin-top: 12px;
-    margin-left: -7px;
-    width: 2.75px;
-    height: 2.75px;
-  }
-
-  .ball2 {
-    margin-left: -12px;
-    width: 2.75px;
-    height: 2.75px;
-  }
 
   .icons_menu_search {
+    position: absolute;
     width: 16.5px;
     height: 16.5px;
-    margin-left: 44px;
+    left: 44px;
   }
 }
 
@@ -180,7 +189,7 @@
   .start_page_text {
     position: absolute;
     max-width: 730px;
-    height: 96px;
+    min-height: 96px;
     margin-top: 550px;
     font-family: PT Sans;
     text-transform: uppercase;
@@ -188,6 +197,12 @@
     color: #ffffff;
     text-align: center;
     line-height: 24px;
+
+    @media (max-width:750px) {
+      width: auto;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
   }
 }
 
@@ -200,6 +215,9 @@
     height: 730px;
     background-color: #000000;
 
+    @media (max-width:550px) {
+      height: 1500px;
+    }
   }
 
   .block_title {
@@ -228,9 +246,14 @@
     position: relative;
 
     .products_block_item {
-      width: 30%;
+      width: 25%;
       height: 325px;
       background-color: #191b1c;
+
+      @media (max-width:550px) {
+        width: 80%;
+        margin-bottom: 80px;
+      }
 
       .item_img {
         display: flex;
@@ -238,11 +261,20 @@
         margin-top: 50px;
       }
 
+      &:hover {
+        cursor: pointer;
+        background: transparent
+      }
+
     }
 
     .watch_block_text {
       position: absolute;
       margin-top: 80px;
+
+      @media (max-width:550px) {
+        margin-top: 80px;
+      }
 
       .watch_block_name {
         font-size: 18px;
@@ -262,6 +294,7 @@
         font-family: "Playfair Display";
       }
     }
+
   }
 
   .about_item_newCollection {
@@ -271,6 +304,7 @@
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
+
 
     .block_title {
       margin: 483px auto;
@@ -292,8 +326,17 @@
           text-transform: uppercase;
           border: 1px solid #ffffff;
           padding: 12px 28px;
-          color: #ffffff;
           font-family: "PT Sans";
+
+          &:hover {
+            cursor: pointer;
+            background-color: #1F1F1F;
+            font-size: 20px;
+          }
+
+          a {
+            color: #FFFFFF;
+          }
         }
       }
 
@@ -313,7 +356,7 @@
 
   .about_item_collect2018 {
     width: 60%;
-    height: 600px;
+    min-height: 600px;
     background-color: #000000;
 
     .block_title {
@@ -323,12 +366,17 @@
     .collect2018_text {
       margin: 0px auto;
       width: 471px;
-      height: 173px;
+      min-height: 173px;
       font-size: 14px;
       text-align: center;
       color: white;
       font-family: "Playfair Display";
       line-height: 21px;
+
+      @media (max-width:550px) {
+        width: auto;
+        margin: 0 15px;
+      }
     }
 
     .button_wrap {
@@ -345,6 +393,16 @@
         color: #ffffff;
         background-color: transparent;
         font-family: "PT Sans";
+
+        &:hover {
+          cursor: pointer;
+          background-color: #1F1F1F;
+          font-size: 20px;
+        }
+
+        a {
+          color: #FFFF
+        }
       }
     }
   }
@@ -375,6 +433,16 @@
 
       .products_block_item {
         width: 45%;
+        margin-bottom: 80px;
+      }
+
+    }
+
+    @media screen and (max-width:450px) {
+      height: 3500px;
+
+      .products_block_item {
+        width: 60%;
         margin-bottom: 80px;
       }
 
@@ -437,13 +505,11 @@
       width: 15%;
       height: 190px;
       margin-right: 80px;
-
     }
 
     .footer_item_mailingList {
       width: 30%;
       height: 200px;
-
     }
 
     .footer_item_title {
@@ -488,6 +554,8 @@
         height: 40px;
         background: rgba(255, 255, 255, 0.4);
         font-size: 20px;
+        padding: 5px;
+        font-family: "PT Sans";
       }
 
       .input_item_submit {
@@ -498,6 +566,10 @@
         line-height: 21px;
         font-size: 14px;
         text-transform: uppercase;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
 
       @media (max-width:363px) {
@@ -511,10 +583,22 @@
       }
     }
 
+    @media (max-width:1650px) {
+      .footer_item_categories {
+        width: 20%;
+        margin-right: 10px;
+      }
+
+      .footer_item_mailingList {
+        margin-left: 15px;
+      }
+
+    }
+
     @media (max-width:1200px) {
       height: 550px;
       align-items: flex-start;
-      padding-top: 5px;
+      padding-top: 25px;
 
       .footer_item_shop,
       .footer_item_categories,
@@ -533,7 +617,7 @@
     @media (max-width:992px) {
       height: 590px;
       align-items: flex-start;
-      padding-top: 5px;
+      padding-top: 25px;
 
       .footer_item_shop,
       .footer_item_categories,
@@ -550,9 +634,9 @@
 
     @media (max-width:768px) {
 
-      height: 610px;
+      height: 650px;
       align-items: flex-start;
-      padding-top: 5px;
+      padding-top: 25px;
 
       .footer_item_shop,
       .footer_item_categories,
@@ -568,9 +652,9 @@
     }
 
     @media (max-width:480px) {
-      height: 650px;
+      height: 670px;
       align-items: flex-start;
-      padding-top: 5px;
+      padding-top: 25px;
 
       .footer_item_shop,
       .footer_item_categories,
@@ -589,6 +673,8 @@
 
 .footer_text {
   width: 100%;
+  position: absolute;
+  margin-bottom: 0px;
   min-height: 50px;
   color: white;
   background-color: #0F0F0F;
@@ -611,7 +697,15 @@
 
   @media screen and (max-width:992px) {}
 
-  @media screen and (max-width:768px) {}
+  @media screen and (max-width:650px) {
+    width: 100%;
+    margin-right: 0px;
+    overflow-x: hidden;
+
+  }
+
+
+
 
   @media screen and (max-width:480px) {}
 
