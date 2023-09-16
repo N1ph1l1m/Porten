@@ -149,6 +149,7 @@ header:before {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background: url(../img/mainBack.png) 50% no-repeat;
 }
 
 .start_page .start_page_block {
@@ -282,6 +283,7 @@ header:before {
 .main_page .about_item_newCollection {
   width: 50%;
   height: 730px;
+  background: url(../img/bg_newCollection.png) 0 0 / cover no-repeat;
 }
 .main_page .about_item_newCollection .block_title {
   margin: 483px auto;
@@ -331,6 +333,7 @@ header:before {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url(../img/bg_item_img.png);
 }
 .main_page .about_item_collect2018 {
   width: 60%;
@@ -438,6 +441,7 @@ header:before {
 .about_us {
   width: 100%;
   min-height: 400px;
+  background: url(../img/about_us.png) 0 0 / auto 100% no-repeat;
 }
 .about_us .footer_wrap {
   width: 100%;
