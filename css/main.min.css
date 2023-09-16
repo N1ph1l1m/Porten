@@ -1,16 +1,16 @@
 @font-face {
   font-family: "PT Sans";
-  src: url(/fonts/PT_Sans/PTSans-Regular.ttf);
+  src: url(../fonts/PT_Sans/PTSans-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Post No Bills Jaffna SemiBold";
-  src: url(/fonts/PostNoBillsJaffna-SemiBold.ttf);
+  src: url(../fonts/PostNoBillsJaffna-SemiBold.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url(/fonts/PlayfairDisplay-Regular.ttf);
+  src: url(../fonts/PlayfairDisplay-Regular.ttf);
   font-weight: 400;
 }
 .header {
