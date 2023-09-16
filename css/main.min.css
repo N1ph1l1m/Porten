@@ -1,16 +1,16 @@
 @font-face {
   font-family: "PT Sans";
-  src: url(/public/fonts/PT_Sans/PTSans-Regular.ttf);
+  src: url(/fonts/PT_Sans/PTSans-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Post No Bills Jaffna SemiBold";
-  src: url(/public/fonts/PostNoBillsJaffna-SemiBold.ttf);
+  src: url(/fonts/PostNoBillsJaffna-SemiBold.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url(/public/fonts/PlayfairDisplay-Regular.ttf);
+  src: url(/fonts/PlayfairDisplay-Regular.ttf);
   font-weight: 400;
 }
 .header {
@@ -145,7 +145,7 @@ header:before {
 .start_page {
   width: 100%;
   min-height: 810px;
-  background: url(/public/img/mainBack.png) 50% no-repeat;
+  background: url(/img/mainBack.png) 50% no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,7 +282,7 @@ header:before {
 .main_page .about_item_newCollection {
   width: 50%;
   height: 730px;
-  background: url(/public/img/bg_newCollection.png) 0 0 / cover no-repeat;
+  background: url(/img/bg_newCollection.png) 0 0 / cover no-repeat;
 }
 .main_page .about_item_newCollection .block_title {
   margin: 483px auto;
@@ -329,7 +329,7 @@ header:before {
 .main_page .about_item_img {
   width: 40%;
   height: 600px;
-  background-image: url(/public/img/bg_item_img.png);
+  background-image: url(/img/bg_item_img.png);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -440,7 +440,7 @@ header:before {
 .about_us {
   width: 100%;
   min-height: 400px;
-  background: url(/public/img/about_us.png) 0 0 / auto 100% no-repeat;
+  background: url(/img/about_us.png) 0 0 / auto 100% no-repeat;
 }
 .about_us .footer_wrap {
   width: 100%;
